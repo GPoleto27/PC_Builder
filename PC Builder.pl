@@ -1511,304 +1511,304 @@ placa_mae() :-
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('h81'),
+    serie('h81'),
+    socket('lga1150'),
+    slots(2),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('h81'),
+    serie('h81'),
+    socket('lga1150'),
+    slots(2),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-b85m-d3h'),
+    serie('b85'),
+    socket('lga1150'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-b85m_gaming_3'),
+    serie('b85'),
+    socket('lga1150'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-z97-d3h'),
+    serie('z97'),
+    socket('lga1150'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-z97_gaming_7'),
+    serie('z97'),
+    socket('lga1150'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-x99_gaming_7'),
+    serie('x99'),
+    socket('lga2011'),
+    slots(8),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-x99_ultra_gaming'),
+    serie('x99'),
+    socket('lga2011'),
+    slots(8),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-h110m-h'),
+    serie('h110'),
+    socket('lga1151'),
+    slots(2),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-h110m_gaming_3'),
+    serie('h110'),
+    socket('lga1151'),
+    slots(2),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-b150-d3h'),
+    serie('b150'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-b150_gaming_3'),
+    serie('b150'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-z170_hd3'),
+    serie('z170'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-z170x_ultra_gaming'),
+    serie('z170'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-b250m-d3h'),
+    serie('b250'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-b250m_gaming_3'),
+    serie('b250'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-z270x_gaming_9'),
+    serie('z270'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-z270x_ultra_gaming'),
+    serie('z270'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('z370_gaming_7'),
+    serie('z370'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('z370_ultra_gaming'),
+    serie('z370'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
+    modelo('ga-x299_aorus_gaming_7'),
+    serie('x299'),
+    socket('lga2066'),
+    slots(8),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('gx299igabyte'),
     modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    serie('ga-x299_aorus_ultra_gaming'),
+    socket('lga2066'),
+    slots(8),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-78lmt-s2p'),
+    serie('760g'),
+    socket('am3+'),
+    slots(2),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-78lmt-usb3'),
+    serie('760g'),
+    socket('am3+'),
+    slots(2),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-880gb-d2h'),
+    serie('880g'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-880gb-usb3'),
+    serie('880g'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-970-ds3p'),
+    serie('970'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-970_gaming'),
+    serie('970'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-990fxa-ud7'),
+    serie('990x'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-990fx_gaming'),
+    serie('990x'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-a320m-hd2'),
+    serie('a320'),
+    socket('am4'),
+    slots(2),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-a320m-d2p'),
+    serie('a320'),
+    socket('am4'),
+    slots(2),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-ab350m-hd3'),
+    serie('b350'),
+    socket('am4'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-ab350m_gaming_3'),
+    serie('b350'),
+    socket('am4'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-ax370_gaming'),
+    serie('x370'),
+    socket('am4'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('ga-ax370_gaming_k7'),
+    serie('x370'),
+    socket('am4'),
+    slots(4),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('x399-designare_ex'),
+    serie('x399'),
+    socket('tr4'),
+    slots(8),
+    ram('ddr4').
 
 placa_mae() :-
     marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
-
-placa_mae() :-
-    marca('gigabyte'),
-    modelo(''),
-    serie(''),
-    socket(''),
-    slots(),
-    ram('').
+    modelo('x399-aorus_gaming_7'),
+    serie('x399'),
+    socket('tr4'),
+    slots(8),
+    ram('ddr4').
