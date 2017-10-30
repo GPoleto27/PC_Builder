@@ -1261,7 +1261,7 @@ ram(crucial_ballistix_elite_8gb_ddr4) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-placa_mae() :-
+placa_mae(asus_h81m-e) :-
     marca('asus'),
     modelo('h81m-e'),
     serie('h81'),
@@ -1269,7 +1269,7 @@ placa_mae() :-
     slots(2),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_h81-plus/csm) :-
     marca('asus'),
     modelo('h81-plus/csm'),
     serie('h81'),
@@ -1277,7 +1277,7 @@ placa_mae() :-
     slots(2),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_b85-g) :-
     marca('asus'),
     modelo('b85-g'),
     serie('b85'),
@@ -1285,7 +1285,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_z97-a) :-
     marca('asus'),
     modelo('z97-a'),
     serie('z97'),
@@ -1293,7 +1293,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_z97-e) :-
     marca('asus'),
     modelo('z97-e'),
     serie('z97'),
@@ -1301,7 +1301,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_x99-e) :-
     marca('asus'),
     modelo('x99-e'),
     serie('x99'),
@@ -1309,7 +1309,7 @@ placa_mae() :-
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_rog_rampage) :-
     marca('asus'),
     modelo('rog_rampage'),
     serie('x99'),
@@ -1317,7 +1317,7 @@ placa_mae() :-
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_h110m-a) :-
     marca('asus'),
     modelo('h110m-a'),
     serie('h110'),
@@ -1325,7 +1325,7 @@ placa_mae() :-
     slots(2),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_prime_h110) :-
     marca('asus'),
     modelo('prime_h110'),
     serie('h110'),
@@ -1333,7 +1333,7 @@ placa_mae() :-
     slots(2),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_b150m-a) :-
     marca('asus'),
     modelo('b150m-a'),
     serie('b150'),
@@ -1341,7 +1341,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_b150m-plus_d3) :-
     marca('asus'),
     modelo('b150m-plus_d3'),
     serie('b150'),
@@ -1349,7 +1349,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_z170-pro) :-
     marca('asus'),
     modelo('z170-pro'),
     serie('z170'),
@@ -1357,7 +1357,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_maximus_vii_impact) :-
     marca('asus'),
     modelo('maximus_vii_impact'),
     serie('z170'),
@@ -1365,7 +1365,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_prime_b250m-plus) :-
     marca('asus'),
     modelo('prime_b250m-plus'),
     serie('b250'),
@@ -1373,7 +1373,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_rog_strix_b250i) :-
     marca('asus'),
     modelo('rog_strix_b250i'),
     serie('b250'),
@@ -1381,7 +1381,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_prime_z270m-plus) :-
     marca('asus'),
     modelo('prime_z270m-plus'),
     serie('z270'),
@@ -1389,7 +1389,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_rog_strix_z270i) :-
     marca('asus'),
     modelo('rog_strix_z270i'),
     serie('z270'),
@@ -1397,7 +1397,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_prime_x299-deluxe) :-
     marca('asus'),
     modelo('prime_x299-deluxe'),
     serie('x299'),
@@ -1405,7 +1405,7 @@ placa_mae() :-
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_rog_rampage_x299-xe) :-
     marca('asus'),
     modelo('rog_rampage_x299-xe'),
     serie('x299'),
@@ -1413,7 +1413,7 @@ placa_mae() :-
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_m5a78l-m) :-
     marca('asus'),
     modelo('m5a78l-m'),
     serie('760g'),
@@ -1421,7 +1421,7 @@ placa_mae() :-
     slots(2),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_m5a78l-m_plus) :-
     marca('asus'),
     modelo('m5a78l-m_plus'),
     serie('780g'),
@@ -1429,7 +1429,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_m5a97) :-
     marca('asus'),
     modelo('m5a97'),
     serie('970'),
@@ -1437,7 +1437,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_m5a97_le) :-
     marca('asus'),
     modelo('m5a97_le'),
     serie('970'),
@@ -1445,7 +1445,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(asus_prime_a320m-a) :-
     marca('asus'),
     modelo('prime_a320m-a'),
     serie('a320'),
@@ -1453,7 +1453,7 @@ placa_mae() :-
     slots(2),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_prime_a320m-c) :-
     marca('asus'),
     modelo('prime_a320m-c'),
     serie('a320'),
@@ -1461,7 +1461,7 @@ placa_mae() :-
     slots(2),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_prime_b350-plus) :-
     marca('asus'),
     modelo('prime_b350-plus'),
     serie('b350'),
@@ -1469,7 +1469,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_rog_strix_b350-f) :-
     marca('asus'),
     modelo('rog_strix_b350-f'),
     serie('b350'),
@@ -1477,7 +1477,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_prime_x370-pro) :-
     marca('asus'),
     modelo('prime_x370-pro'),
     serie('x370'),
@@ -1485,7 +1485,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_rog_crosshair_vi) :-
     marca('asus'),
     modelo('rog_crosshair_vi'),
     serie('x370'),
@@ -1493,7 +1493,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_prim_x399-a) :-
     marca('asus'),
     modelo('prim_x399-a'),
     serie('x399'),
@@ -1501,7 +1501,7 @@ placa_mae() :-
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(asus_rog_strix_x399-e) :-
     marca('asus'),
     modelo('rog_strix_x399-e'),
     serie('x399'),
@@ -1509,23 +1509,23 @@ placa_mae() :-
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-h81m-h) :-
     marca('gigabyte'),
-    modelo('h81'),
+    modelo('ga-h81m-h'),
     serie('h81'),
     socket('lga1150'),
     slots(2),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-h81m_gaming_3) :-
     marca('gigabyte'),
-    modelo('h81'),
+    modelo('ga-h81m_gaming_3'),
     serie('h81'),
     socket('lga1150'),
     slots(2),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-b85m-d3h) :-
     marca('gigabyte'),
     modelo('ga-b85m-d3h'),
     serie('b85'),
@@ -1533,7 +1533,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-b85m_gaming_3) :-
     marca('gigabyte'),
     modelo('ga-b85m_gaming_3'),
     serie('b85'),
@@ -1541,7 +1541,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-z97-d3h) :-
     marca('gigabyte'),
     modelo('ga-z97-d3h'),
     serie('z97'),
@@ -1549,7 +1549,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-z97_gaming_7) :-
     marca('gigabyte'),
     modelo('ga-z97_gaming_7'),
     serie('z97'),
@@ -1557,7 +1557,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-x99_gaming_7) :-
     marca('gigabyte'),
     modelo('ga-x99_gaming_7'),
     serie('x99'),
@@ -1565,7 +1565,7 @@ placa_mae() :-
     slots(8),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-x99_ultra_gaming) :-
     marca('gigabyte'),
     modelo('ga-x99_ultra_gaming'),
     serie('x99'),
@@ -1573,7 +1573,7 @@ placa_mae() :-
     slots(8),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-h110m-h) :-
     marca('gigabyte'),
     modelo('ga-h110m-h'),
     serie('h110'),
@@ -1581,7 +1581,7 @@ placa_mae() :-
     slots(2),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-h110m_gaming_3) :-
     marca('gigabyte'),
     modelo('ga-h110m_gaming_3'),
     serie('h110'),
@@ -1589,7 +1589,7 @@ placa_mae() :-
     slots(2),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-b150-d3h) :-
     marca('gigabyte'),
     modelo('ga-b150-d3h'),
     serie('b150'),
@@ -1597,7 +1597,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-b150_gaming_3) :-
     marca('gigabyte'),
     modelo('ga-b150_gaming_3'),
     serie('b150'),
@@ -1605,7 +1605,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-z170_hd3) :-
     marca('gigabyte'),
     modelo('ga-z170_hd3'),
     serie('z170'),
@@ -1613,7 +1613,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-z170x_ultra_gaming) :-
     marca('gigabyte'),
     modelo('ga-z170x_ultra_gaming'),
     serie('z170'),
@@ -1621,7 +1621,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-b250m-d3h) :-
     marca('gigabyte'),
     modelo('ga-b250m-d3h'),
     serie('b250'),
@@ -1629,7 +1629,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-b250m_gaming_3) :-
     marca('gigabyte'),
     modelo('ga-b250m_gaming_3'),
     serie('b250'),
@@ -1637,7 +1637,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-z270x_gaming_9) :-
     marca('gigabyte'),
     modelo('ga-z270x_gaming_9'),
     serie('z270'),
@@ -1645,7 +1645,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-z270x_ultra_gaming) :-
     marca('gigabyte'),
     modelo('ga-z270x_ultra_gaming'),
     serie('z270'),
@@ -1653,7 +1653,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_z370_gaming_7) :-
     marca('gigabyte'),
     modelo('z370_gaming_7'),
     serie('z370'),
@@ -1661,7 +1661,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_z370_ultra_gaming) :-
     marca('gigabyte'),
     modelo('z370_ultra_gaming'),
     serie('z370'),
@@ -1669,7 +1669,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-x299_aorus_gaming_7) :-
     marca('gigabyte'),
     modelo('ga-x299_aorus_gaming_7'),
     serie('x299'),
@@ -1677,15 +1677,15 @@ placa_mae() :-
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
-    marca('gx299igabyte'),
-    modelo(''),
-    serie('ga-x299_aorus_ultra_gaming'),
+placa_mae(gigabyte_ga-x299_aorus_ultra_gaming) :-
+    marca('gigabyte'),
+    modelo('ga-x299_aorus_ultra_gaming'),
+    serie('x299'),
     socket('lga2066'),
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae('gigabyte_ga-78lmt-s2p') :-
     marca('gigabyte'),
     modelo('ga-78lmt-s2p'),
     serie('760g'),
@@ -1693,7 +1693,7 @@ placa_mae() :-
     slots(2),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae('gigabyte_ga-78lmt-usb3') :-
     marca('gigabyte'),
     modelo('ga-78lmt-usb3'),
     serie('760g'),
@@ -1701,7 +1701,7 @@ placa_mae() :-
     slots(2),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae('gigabyte_ga-880gb-d2h') :-
     marca('gigabyte'),
     modelo('ga-880gb-d2h'),
     serie('880g'),
@@ -1709,7 +1709,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae('gigabyte_ga-880gb-usb3') :-
     marca('gigabyte'),
     modelo('ga-880gb-usb3'),
     serie('880g'),
@@ -1717,7 +1717,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae('gigabyte_ga-970-ds3p') :-
     marca('gigabyte'),
     modelo('ga-970-ds3p'),
     serie('970'),
@@ -1725,7 +1725,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae('gigabyte_ga-970_gaming') :-
     marca('gigabyte'),
     modelo('ga-970_gaming'),
     serie('970'),
@@ -1733,7 +1733,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae('gigabyte_ga-990fxa-ud7') :-
     marca('gigabyte'),
     modelo('ga-990fxa-ud7'),
     serie('990x'),
@@ -1741,7 +1741,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae('gigabyte_ga-990fx_gaming') :-
     marca('gigabyte'),
     modelo('ga-990fx_gaming'),
     serie('990x'),
@@ -1749,7 +1749,7 @@ placa_mae() :-
     slots(4),
     ram('ddr3'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-a320m-hd2) :-
     marca('gigabyte'),
     modelo('ga-a320m-hd2'),
     serie('a320'),
@@ -1757,7 +1757,7 @@ placa_mae() :-
     slots(2),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-a320m-d2p) :-
     marca('gigabyte'),
     modelo('ga-a320m-d2p'),
     serie('a320'),
@@ -1765,7 +1765,7 @@ placa_mae() :-
     slots(2),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-ab350m-hd3) :-
     marca('gigabyte'),
     modelo('ga-ab350m-hd3'),
     serie('b350'),
@@ -1773,7 +1773,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-ab350m_gaming_3) :-
     marca('gigabyte'),
     modelo('ga-ab350m_gaming_3'),
     serie('b350'),
@@ -1781,7 +1781,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-ax370_gaming) :-
     marca('gigabyte'),
     modelo('ga-ax370_gaming'),
     serie('x370'),
@@ -1789,7 +1789,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_ga-ax370_gaming_k7) :-
     marca('gigabyte'),
     modelo('ga-ax370_gaming_k7'),
     serie('x370'),
@@ -1797,7 +1797,7 @@ placa_mae() :-
     slots(4),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_x399-designare_ex) :-
     marca('gigabyte'),
     modelo('x399-designare_ex'),
     serie('x399'),
@@ -1805,7 +1805,7 @@ placa_mae() :-
     slots(8),
     ram('ddr4'),!.
 
-placa_mae() :-
+placa_mae(gigabyte_x399-aorus_gaming_7) :-
     marca('gigabyte'),
     modelo('x399-aorus_gaming_7'),
     serie('x399'),
