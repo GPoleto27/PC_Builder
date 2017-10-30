@@ -9,10 +9,10 @@ goal:-
 known(nope,info,info).
 
 ask(A, V):-
-	known(yes, A, V),       % succeed if true
-	!.                      % stop looking
+	known(yes, A, V),        % succeed if true
+	!.                       % stop looking
 ask(A, V):-
-	known(_, A, V),         % fail if false
+	known(_, A, V),          % fail if false
 	!,
 	fail.
 ask(A, V):-
@@ -915,3 +915,900 @@ processador(threadripper_1950X) :-
     ram('ddr4'),
     cores(16),
     threads(32),!.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('low_profile'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('low_profile'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('pro'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('pro'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('corsair'),
+    modelo('dominator'),
+    serie('platinum'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('corsair'),
+    modelo('dominator'),
+    serie('platinum'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('lpx'),
+    capacidade('4gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('lpx'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('lpx'),
+    capacidade('16gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('led'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('led'),
+    capacidade('16gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('rgb'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('corsair'),
+    modelo('vengeance'),
+    serie('rgb'),
+    capacidade('16gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('corsair'),
+    modelo('dominator'),
+    serie('platinum'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('corsair'),
+    modelo('dominator'),
+    serie('platinum'),
+    capacidade('16gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('fury'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('fury'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('savage'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('savage'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('predator'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('predator'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('fury'),
+    capacidade('4gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('fury'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('fury'),
+    capacidade('16gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('savage'),
+    capacidade('4gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('savage'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('predator'),
+    capacidade('16gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('predator'),
+    capacidade('4gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('predator'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('kingston'),
+    modelo('hyperx'),
+    serie('predator'),
+    capacidade('16gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport'),
+    capacidade('2gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport_xt'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport_xt'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('tactical'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('tactical'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('elite'),
+    capacidade('4gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('elite'),
+    capacidade('8gb'),
+    slot('ddr3').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport'),
+    capacidade('4gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport_lt'),
+    capacidade('4gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('sport_lt'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('tactical'),
+    capacidade('4gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('tactical'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('elite'),
+    capacidade('4gb'),
+    slot('ddr4').
+
+ram() :-
+    marca('crucial'),
+    modelo('ballistix'),
+    serie('elite'),
+    capacidade('8gb'),
+    slot('ddr4').
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+placa_mae() :-
+    marca('asus'),
+    modelo('h81m-e'),
+    serie('h81'),
+    socket('lga1150'),
+    slots(2),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('h81-plus/csm'),
+    serie('h81'),
+    socket('lga1150'),
+    slots(2),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('b85-g'),
+    serie('b85'),
+    socket('lga1150'),
+    slots(4),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('z97-a'),
+    serie('z97'),
+    socket('lga1150'),
+    slots(4),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('z97-e'),
+    serie('z97'),
+    socket('lga1150'),
+    slots(4),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('x99-e'),
+    serie('x99'),
+    socket('lga2011'),
+    slots(8),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('rog_rampage'),
+    serie('x99'),
+    socket('lga2011'),
+    slots(8),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('h110m-a'),
+    serie('h110'),
+    socket('lga1151'),
+    slots(2),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prime_h110'),
+    serie('h110'),
+    socket('lga1151'),
+    slots(2),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('b150m-a'),
+    serie('b150'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('b150m-plus_d3'),
+    serie('b150'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('z170-pro'),
+    serie('z170'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('maximus_vii_impact'),
+    serie('z170'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prime_b250m-plus'),
+    serie('b250'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('rog_strix_b250i'),
+    serie('b250'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prime_z270m-plus'),
+    serie('z270'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('rog_strix_z270i'),
+    serie('z270'),
+    socket('lga1151'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prime_x299-deluxe'),
+    serie('x299'),
+    socket('lga2066'),
+    slots(8),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('rog_rampage_x299-xe'),
+    serie('x299'),
+    socket('lga2066'),
+    slots(8),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('m5a78l-m'),
+    serie('760g'),
+    socket('am3+'),
+    slots(2),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('m5a78l-m_plus'),
+    serie('780g'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('m5a97'),
+    serie('970'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('m5a97_le'),
+    serie('970'),
+    socket('am3+'),
+    slots(4),
+    ram('ddr3').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prime_a320m-a'),
+    serie('a320'),
+    socket('am4'),
+    slots(2),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prime_a320m-c'),
+    serie('a320'),
+    socket('am4'),
+    slots(2),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prime_b350-plus'),
+    serie('b350'),
+    socket('am4'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('rog_strix_b350-f'),
+    serie('b350'),
+    socket('am4'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prime_x370-pro'),
+    serie('x370'),
+    socket('am4'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('rog_crosshair_vi'),
+    serie('x370'),
+    socket('am4'),
+    slots(4),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('prim_x399-a'),
+    serie('x399'),
+    socket('tr4'),
+    slots(8),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('asus'),
+    modelo('rog_strix_x399-e'),
+    serie('x399'),
+    socket('tr4'),
+    slots(8),
+    ram('ddr4').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
+
+placa_mae() :-
+    marca('gigabyte'),
+    modelo(''),
+    serie(''),
+    socket(''),
+    slots(),
+    ram('').
