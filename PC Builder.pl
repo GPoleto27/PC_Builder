@@ -918,346 +918,346 @@ processador(threadripper_1950X) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-ram() :-
+ram(corsair_vengeance_4gb_ddr3) :-
     marca('corsair'),
     modelo('vengeance'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(corsair_vengeance_8gb_ddr3) :-
     marca('corsair'),
     modelo('vengeance'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(corsair_vengeance_lp_4gb_ddr3) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('low_profile'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(corsair_vengeance_lp_8gb_ddr3) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('low_profile'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(corsair_vengeance_pro_4gb_ddr3) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('pro'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(corsair_vengeance_pro_8gb_ddr3) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('pro'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(corsair_dominator_platinum_4gb_ddr3) :-
     marca('corsair'),
     modelo('dominator'),
     serie('platinum'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(corsair_dominator_platinum_8gb_ddr3) :-
     marca('corsair'),
     modelo('dominator'),
     serie('platinum'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(corsair_vengeance_lpx_4gb_ddr4) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('lpx'),
     capacidade('4gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(corsair_vengeance_lpx_8gb_ddr4) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('lpx'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(corsair_vengeance_lpx_16gb_ddr4) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('lpx'),
     capacidade('16gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(corsair_vengeance_led_8gb_ddr4) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('led'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(corsair_vengeance_led_16gb_ddr4) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('led'),
     capacidade('16gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(corsair_vengeance_rgb_8gb_ddr4) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('rgb'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(corsair_vengeance_rgb_16gb_ddr4) :-
     marca('corsair'),
     modelo('vengeance'),
     serie('rgb'),
     capacidade('16gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(corsair_dominator_platinum_8gb_ddr4) :-
     marca('corsair'),
     modelo('dominator'),
     serie('platinum'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(corsair_dominator_platinum_16gb_ddr4) :-
     marca('corsair'),
     modelo('dominator'),
     serie('platinum'),
     capacidade('16gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_fury_4gb_ddr3) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('fury'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(kingston_hyperx_fury_8gb_ddr3) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('fury'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(kingston_hyperx_savage_4gb_ddr3) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('savage'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(kingston_hyperx_savage_8gb_ddr3) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('savage'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(kingston_hyperx_predator_4gb_ddr3) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('predator'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(kingston_hyperx_predator_8gb_ddr3) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('predator'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(kingston_hyperx_fury_4gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('fury'),
     capacidade('4gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_fury_8gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('fury'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_fury_16gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('fury'),
     capacidade('16gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_savage_4gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('savage'),
     capacidade('4gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_savage_8gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('savage'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_savage_16gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('predator'),
     capacidade('16gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_predator_4gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('predator'),
     capacidade('4gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_predator_8gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('predator'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(kingston_hyperx_predator_16gb_ddr4) :-
     marca('kingston'),
     modelo('hyperx'),
     serie('predator'),
     capacidade('16gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_2gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport'),
     capacidade('2gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_4gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_8gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_xt_4gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport_xt'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_xt_8gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport_xt'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_tactical_4gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('tactical'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_tactical_8gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('tactical'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_elite_4gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('elite'),
     capacidade('4gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_elite_8gb_ddr3) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('elite'),
     capacidade('8gb'),
-    slot('ddr3').
+    slot('ddr3'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_4gb_ddr4) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport'),
     capacidade('4gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_8gb_ddr4) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_lt_4gb_ddr4) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport_lt'),
     capacidade('4gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(crucial_ballistix_sport_lt_4gb_ddr4) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('sport_lt'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(crucial_ballistix_tactical_4gb_ddr4) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('tactical'),
     capacidade('4gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(crucial_ballistix_tactical_8gb_ddr4) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('tactical'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(crucial_ballistix_elite_4gb_ddr4) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('elite'),
     capacidade('4gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
-ram() :-
+ram(crucial_ballistix_elite_8gb_ddr4) :-
     marca('crucial'),
     modelo('ballistix'),
     serie('elite'),
     capacidade('8gb'),
-    slot('ddr4').
+    slot('ddr4'),!.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1267,7 +1267,7 @@ placa_mae() :-
     serie('h81'),
     socket('lga1150'),
     slots(2),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1275,7 +1275,7 @@ placa_mae() :-
     serie('h81'),
     socket('lga1150'),
     slots(2),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1283,7 +1283,7 @@ placa_mae() :-
     serie('b85'),
     socket('lga1150'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1291,7 +1291,7 @@ placa_mae() :-
     serie('z97'),
     socket('lga1150'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1299,7 +1299,7 @@ placa_mae() :-
     serie('z97'),
     socket('lga1150'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1307,7 +1307,7 @@ placa_mae() :-
     serie('x99'),
     socket('lga2011'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1315,7 +1315,7 @@ placa_mae() :-
     serie('x99'),
     socket('lga2011'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1323,7 +1323,7 @@ placa_mae() :-
     serie('h110'),
     socket('lga1151'),
     slots(2),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1331,7 +1331,7 @@ placa_mae() :-
     serie('h110'),
     socket('lga1151'),
     slots(2),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1339,7 +1339,7 @@ placa_mae() :-
     serie('b150'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1347,7 +1347,7 @@ placa_mae() :-
     serie('b150'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1355,7 +1355,7 @@ placa_mae() :-
     serie('z170'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1363,7 +1363,7 @@ placa_mae() :-
     serie('z170'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1371,7 +1371,7 @@ placa_mae() :-
     serie('b250'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1379,7 +1379,7 @@ placa_mae() :-
     serie('b250'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1387,7 +1387,7 @@ placa_mae() :-
     serie('z270'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1395,7 +1395,7 @@ placa_mae() :-
     serie('z270'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1403,7 +1403,7 @@ placa_mae() :-
     serie('x299'),
     socket('lga2066'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1411,7 +1411,7 @@ placa_mae() :-
     serie('x299'),
     socket('lga2066'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1419,7 +1419,7 @@ placa_mae() :-
     serie('760g'),
     socket('am3+'),
     slots(2),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1427,7 +1427,7 @@ placa_mae() :-
     serie('780g'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1435,7 +1435,7 @@ placa_mae() :-
     serie('970'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1443,7 +1443,7 @@ placa_mae() :-
     serie('970'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1451,7 +1451,7 @@ placa_mae() :-
     serie('a320'),
     socket('am4'),
     slots(2),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1459,7 +1459,7 @@ placa_mae() :-
     serie('a320'),
     socket('am4'),
     slots(2),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1467,7 +1467,7 @@ placa_mae() :-
     serie('b350'),
     socket('am4'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1475,7 +1475,7 @@ placa_mae() :-
     serie('b350'),
     socket('am4'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1483,7 +1483,7 @@ placa_mae() :-
     serie('x370'),
     socket('am4'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1491,7 +1491,7 @@ placa_mae() :-
     serie('x370'),
     socket('am4'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1499,7 +1499,7 @@ placa_mae() :-
     serie('x399'),
     socket('tr4'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('asus'),
@@ -1507,7 +1507,7 @@ placa_mae() :-
     serie('x399'),
     socket('tr4'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1515,7 +1515,7 @@ placa_mae() :-
     serie('h81'),
     socket('lga1150'),
     slots(2),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1523,7 +1523,7 @@ placa_mae() :-
     serie('h81'),
     socket('lga1150'),
     slots(2),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1531,7 +1531,7 @@ placa_mae() :-
     serie('b85'),
     socket('lga1150'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1539,7 +1539,7 @@ placa_mae() :-
     serie('b85'),
     socket('lga1150'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1547,7 +1547,7 @@ placa_mae() :-
     serie('z97'),
     socket('lga1150'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1555,7 +1555,7 @@ placa_mae() :-
     serie('z97'),
     socket('lga1150'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1563,7 +1563,7 @@ placa_mae() :-
     serie('x99'),
     socket('lga2011'),
     slots(8),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1571,7 +1571,7 @@ placa_mae() :-
     serie('x99'),
     socket('lga2011'),
     slots(8),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1579,7 +1579,7 @@ placa_mae() :-
     serie('h110'),
     socket('lga1151'),
     slots(2),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1587,7 +1587,7 @@ placa_mae() :-
     serie('h110'),
     socket('lga1151'),
     slots(2),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1595,7 +1595,7 @@ placa_mae() :-
     serie('b150'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1603,7 +1603,7 @@ placa_mae() :-
     serie('b150'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1611,7 +1611,7 @@ placa_mae() :-
     serie('z170'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1619,7 +1619,7 @@ placa_mae() :-
     serie('z170'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1627,7 +1627,7 @@ placa_mae() :-
     serie('b250'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1635,7 +1635,7 @@ placa_mae() :-
     serie('b250'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1643,7 +1643,7 @@ placa_mae() :-
     serie('z270'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1651,7 +1651,7 @@ placa_mae() :-
     serie('z270'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1659,7 +1659,7 @@ placa_mae() :-
     serie('z370'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1667,7 +1667,7 @@ placa_mae() :-
     serie('z370'),
     socket('lga1151'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1675,7 +1675,7 @@ placa_mae() :-
     serie('x299'),
     socket('lga2066'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gx299igabyte'),
@@ -1683,7 +1683,7 @@ placa_mae() :-
     serie('ga-x299_aorus_ultra_gaming'),
     socket('lga2066'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1691,7 +1691,7 @@ placa_mae() :-
     serie('760g'),
     socket('am3+'),
     slots(2),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1699,7 +1699,7 @@ placa_mae() :-
     serie('760g'),
     socket('am3+'),
     slots(2),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1707,7 +1707,7 @@ placa_mae() :-
     serie('880g'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1715,7 +1715,7 @@ placa_mae() :-
     serie('880g'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1723,7 +1723,7 @@ placa_mae() :-
     serie('970'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1731,7 +1731,7 @@ placa_mae() :-
     serie('970'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1739,7 +1739,7 @@ placa_mae() :-
     serie('990x'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1747,7 +1747,7 @@ placa_mae() :-
     serie('990x'),
     socket('am3+'),
     slots(4),
-    ram('ddr3').
+    ram('ddr3'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1755,7 +1755,7 @@ placa_mae() :-
     serie('a320'),
     socket('am4'),
     slots(2),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1763,7 +1763,7 @@ placa_mae() :-
     serie('a320'),
     socket('am4'),
     slots(2),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1771,7 +1771,7 @@ placa_mae() :-
     serie('b350'),
     socket('am4'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1779,7 +1779,7 @@ placa_mae() :-
     serie('b350'),
     socket('am4'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1787,7 +1787,7 @@ placa_mae() :-
     serie('x370'),
     socket('am4'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1795,7 +1795,7 @@ placa_mae() :-
     serie('x370'),
     socket('am4'),
     slots(4),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1803,7 +1803,7 @@ placa_mae() :-
     serie('x399'),
     socket('tr4'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
 
 placa_mae() :-
     marca('gigabyte'),
@@ -1811,4 +1811,4 @@ placa_mae() :-
     serie('x399'),
     socket('tr4'),
     slots(8),
-    ram('ddr4').
+    ram('ddr4'),!.
