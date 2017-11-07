@@ -1,15 +1,14 @@
-% processador(Proc, Spec), member(	familia('i5'),Spec), m	ember(ram('ddr4'),Spec).
 % EXEMPLO DE PESQUISA: processador(Proc, Specs), member(familia('pentium'), Specs).
-
+% processador(Proc, Spec), member(	familia('i5'),Spec), member(ram('ddr4'),Spec).
 % REGRAS.
 build(MarcaProc, Familia, SerieProc, Clock, Socket, Ram, Cores, Threads, MarcaRam, ModeloRam, SerieRam, Capacidade, MarcaMobo, ModeloMobo, SerieMobo, Slots):-
-	processador(NomeProc, [marca(MarcaProc), familia(Familia), serie(SerieProc), clock(Clock), socket(Socket), ram(Ram), cores(Cores), threads(Threads)]),
-	periferico_ram(NomeRam, [marca(MarcaRam), modelo(ModeloRam), serie(SerieRam), capacidade(Capacidade), ram(Ram)]),
-	placa_mae(NomeMobo, [marca(MarcaMobo), modelo(ModeloMobo), serie(SerieMobo), socket(Socket), slots(Slots), ram(Ram)]),
-	write("-----------------------------"), nl, 
+	processador(NomeProc, [clock(Clock), socket(Socket), ram(Ram), cores(Cores), threads(Threads), familia(Familia), serie(SerieProc), marca(MarcaProc)]),
+	periferico_ram(NomeRam, [ram(Ram), capacidade(Capacidade), modelo(ModeloRam), serie(SerieRam), marca(MarcaRam)]),
+	placa_mae(NomeMobo, [socket(Socket), slots(Slots), ram(Ram), serie(SerieMobo), modelo(ModeloMobo), marca(MarcaMobo)]),
+    write("-----------------------------"), nl, 
 	write("Processador: "), write(NomeProc), nl,
 	write("Ram: "), write(NomeRam), nl,
-	write("Placa-mãe: "), write(NomeMobo), nl,!.
+	write("Placa-mãe: "), write(NomeMobo), nl.
 build:-
 	write('Não foi possível montar.'), nl.
 
@@ -24,7 +23,7 @@ aProcessador:-
 %%%
 
 aRam :-				% "ADIVINHA" A RAM
-    ram(R),
+    periferico_ram(R),
 	write('A memória RAM é: '), write(R), nl,!.
 aRam:-
     write('RAM não encontrada.'),nl.
@@ -32,7 +31,7 @@ aRam:-
 %%%
 
 aMobo :-			% "ADIVINHA" A MOTHERBOARD
-    ram(M),
+    placa_mae(M),
 	write('A placa-mãe é: '), write(M), nl,!.
 aMobo:-
     write('Placa-mãe não encontrada.'),nl.
@@ -182,55 +181,55 @@ processador(threadripper_1950X, [clock(3.4), socket('tr4'), ram('ddr4'), cores(1
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-periferico_ram(corsair_vengeance_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('vengeance'), marca('corsair')]).
-periferico_ram(corsair_vengeance_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('vengeance'), marca('corsair')]).
-periferico_ram(corsair_vengeance_lp_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('vengeance'), serie('low_profile'), marca('corsair')]).
-periferico_ram(corsair_vengeance_lp_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('vengeance'), serie('low_profile'), marca('corsair')]).
-periferico_ram(corsair_vengeance_pro_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('vengeance'), serie('pro'), marca('corsair')]).
-periferico_ram(corsair_vengeance_pro_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('vengeance'), serie('pro'), marca('corsair')]).
-periferico_ram(corsair_dominator_platinum_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('dominator'), serie('platinum'), marca('corsair')]).
-periferico_ram(corsair_dominator_platinum_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('dominator'), serie('platinum'), marca('corsair')]).
-periferico_ram(corsair_vengeance_lpx_4gb_ddr4, [slot('ddr4'), capacidade('4gb'), modelo('vengeance'), serie('lpx'), marca('corsair')]).
-periferico_ram(corsair_vengeance_lpx_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('vengeance'), serie('lpx'), marca('corsair')]).
-periferico_ram(corsair_vengeance_lpx_16gb_ddr4, [slot('ddr4'), capacidade('16gb'), modelo('vengeance'), serie('lpx'), marca('corsair')]).
-periferico_ram(corsair_vengeance_led_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('vengeance'), serie('led'), marca('corsair')]).
-periferico_ram(corsair_vengeance_led_16gb_ddr4, [slot('ddr4'), capacidade('16gb'), modelo('vengeance'), serie('led'), marca('corsair')]).
-periferico_ram(corsair_vengeance_rgb_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('vengeance'), serie('rgb'), marca('corsair')]).
-periferico_ram(corsair_vengeance_rgb_16gb_ddr4, [slot('ddr4'), capacidade('16gb'), modelo('vengeance'), serie('rgb'), marca('corsair')]).
-periferico_ram(corsair_dominator_platinum_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('dominator'), serie('platinum'), marca('corsair')]).
-periferico_ram(corsair_dominator_platinum_16gb_ddr4, [slot('ddr4'), capacidade('16gb'), modelo('dominator'), serie('platinum'), marca('corsair')]).
-periferico_ram(kingston_hyperx_fury_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
-periferico_ram(kingston_hyperx_fury_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
-periferico_ram(kingston_hyperx_savage_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('hyperx'), serie('savage'), marca('kingston')]).
-periferico_ram(kingston_hyperx_savage_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('hyperx'), serie('savage'), marca('kingston')]).
-periferico_ram(kingston_hyperx_predator_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
-periferico_ram(kingston_hyperx_predator_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
-periferico_ram(kingston_hyperx_fury_4gb_ddr4, [slot('ddr4'), capacidade('4gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
-periferico_ram(kingston_hyperx_fury_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
-periferico_ram(kingston_hyperx_fury_16gb_ddr4, [slot('ddr4'), capacidade('16gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
-periferico_ram(kingston_hyperx_savage_4gb_ddr4, [slot('ddr4'), capacidade('4gb'), modelo('hyperx'), serie('savage'), marca('kingston')]).
-periferico_ram(kingston_hyperx_savage_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('hyperx'), serie('savage'), marca('kingston')]).
-periferico_ram(kingston_hyperx_savage_16gb_ddr4, [slot('ddr4'), capacidade('16gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
-periferico_ram(kingston_hyperx_predator_4gb_ddr4, [slot('ddr4'), capacidade('4gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
-periferico_ram(kingston_hyperx_predator_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
-periferico_ram(kingston_hyperx_predator_16gb_ddr4, [slot('ddr4'), capacidade('16gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
-periferico_ram(crucial_ballistix_sport_2gb_ddr3, [slot('ddr3'), capacidade('2gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
-periferico_ram(crucial_ballistix_sport_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
-periferico_ram(crucial_ballistix_sport_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
-periferico_ram(crucial_ballistix_sport_xt_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('ballistix'), serie('sport_xt'), marca('crucial')]).
-periferico_ram(crucial_ballistix_sport_xt_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('ballistix'), serie('sport_xt'), marca('crucial')]).
-periferico_ram(crucial_ballistix_tactical_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('ballistix'), serie('tactical'), marca('crucial')]).
-periferico_ram(crucial_ballistix_tactical_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('ballistix'), serie('tactical'), marca('crucial')]).
-periferico_ram(crucial_ballistix_elite_4gb_ddr3, [slot('ddr3'), capacidade('4gb'), modelo('ballistix'), serie('elite'), marca('crucial')]).
-periferico_ram(crucial_ballistix_elite_8gb_ddr3, [slot('ddr3'), capacidade('8gb'), modelo('ballistix'), serie('elite'), marca('crucial')]).
-periferico_ram(crucial_ballistix_sport_4gb_ddr4, [slot('ddr4'), capacidade('4gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
-periferico_ram(crucial_ballistix_sport_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
-periferico_ram(crucial_ballistix_sport_lt_4gb_ddr4, [slot('ddr4'), capacidade('4gb'), modelo('ballistix'), serie('sport_lt'), marca('crucial')]).
-periferico_ram(crucial_ballistix_sport_lt_4gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('ballistix'), serie('sport_lt'), marca('crucial')]).
-periferico_ram(crucial_ballistix_tactical_4gb_ddr4, [slot('ddr4'), capacidade('4gb'), modelo('ballistix'), serie('tactical'), marca('crucial')]).
-periferico_ram(crucial_ballistix_tactical_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('ballistix'), serie('tactical'), marca('crucial')]).
-periferico_ram(crucial_ballistix_elite_4gb_ddr4, [slot('ddr4'), capacidade('4gb'), modelo('ballistix'), serie('elite'), marca('crucial')]).
-periferico_ram(crucial_ballistix_elite_8gb_ddr4, [slot('ddr4'), capacidade('8gb'), modelo('ballistix'), serie('elite'), marca('crucial')]).
+periferico_ram(corsair_vengeance_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('vengeance'), marca('corsair')]).
+periferico_ram(corsair_vengeance_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('vengeance'), marca('corsair')]).
+periferico_ram(corsair_vengeance_lp_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('vengeance'), serie('low_profile'), marca('corsair')]).
+periferico_ram(corsair_vengeance_lp_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('vengeance'), serie('low_profile'), marca('corsair')]).
+periferico_ram(corsair_vengeance_pro_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('vengeance'), serie('pro'), marca('corsair')]).
+periferico_ram(corsair_vengeance_pro_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('vengeance'), serie('pro'), marca('corsair')]).
+periferico_ram(corsair_dominator_platinum_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('dominator'), serie('platinum'), marca('corsair')]).
+periferico_ram(corsair_dominator_platinum_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('dominator'), serie('platinum'), marca('corsair')]).
+periferico_ram(corsair_vengeance_lpx_4gb_ddr4, [ram('ddr4'), capacidade('4gb'), modelo('vengeance'), serie('lpx'), marca('corsair')]).
+periferico_ram(corsair_vengeance_lpx_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('vengeance'), serie('lpx'), marca('corsair')]).
+periferico_ram(corsair_vengeance_lpx_16gb_ddr4, [ram('ddr4'), capacidade('16gb'), modelo('vengeance'), serie('lpx'), marca('corsair')]).
+periferico_ram(corsair_vengeance_led_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('vengeance'), serie('led'), marca('corsair')]).
+periferico_ram(corsair_vengeance_led_16gb_ddr4, [ram('ddr4'), capacidade('16gb'), modelo('vengeance'), serie('led'), marca('corsair')]).
+periferico_ram(corsair_vengeance_rgb_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('vengeance'), serie('rgb'), marca('corsair')]).
+periferico_ram(corsair_vengeance_rgb_16gb_ddr4, [ram('ddr4'), capacidade('16gb'), modelo('vengeance'), serie('rgb'), marca('corsair')]).
+periferico_ram(corsair_dominator_platinum_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('dominator'), serie('platinum'), marca('corsair')]).
+periferico_ram(corsair_dominator_platinum_16gb_ddr4, [ram('ddr4'), capacidade('16gb'), modelo('dominator'), serie('platinum'), marca('corsair')]).
+periferico_ram(kingston_hyperx_fury_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
+periferico_ram(kingston_hyperx_fury_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
+periferico_ram(kingston_hyperx_savage_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('hyperx'), serie('savage'), marca('kingston')]).
+periferico_ram(kingston_hyperx_savage_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('hyperx'), serie('savage'), marca('kingston')]).
+periferico_ram(kingston_hyperx_predator_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
+periferico_ram(kingston_hyperx_predator_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
+periferico_ram(kingston_hyperx_fury_4gb_ddr4, [ram('ddr4'), capacidade('4gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
+periferico_ram(kingston_hyperx_fury_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
+periferico_ram(kingston_hyperx_fury_16gb_ddr4, [ram('ddr4'), capacidade('16gb'), modelo('hyperx'), serie('fury'), marca('kingston')]).
+periferico_ram(kingston_hyperx_savage_4gb_ddr4, [ram('ddr4'), capacidade('4gb'), modelo('hyperx'), serie('savage'), marca('kingston')]).
+periferico_ram(kingston_hyperx_savage_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('hyperx'), serie('savage'), marca('kingston')]).
+periferico_ram(kingston_hyperx_savage_16gb_ddr4, [ram('ddr4'), capacidade('16gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
+periferico_ram(kingston_hyperx_predator_4gb_ddr4, [ram('ddr4'), capacidade('4gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
+periferico_ram(kingston_hyperx_predator_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
+periferico_ram(kingston_hyperx_predator_16gb_ddr4, [ram('ddr4'), capacidade('16gb'), modelo('hyperx'), serie('predator'), marca('kingston')]).
+periferico_ram(crucial_ballistix_sport_2gb_ddr3, [ram('ddr3'), capacidade('2gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
+periferico_ram(crucial_ballistix_sport_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
+periferico_ram(crucial_ballistix_sport_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
+periferico_ram(crucial_ballistix_sport_xt_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('ballistix'), serie('sport_xt'), marca('crucial')]).
+periferico_ram(crucial_ballistix_sport_xt_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('ballistix'), serie('sport_xt'), marca('crucial')]).
+periferico_ram(crucial_ballistix_tactical_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('ballistix'), serie('tactical'), marca('crucial')]).
+periferico_ram(crucial_ballistix_tactical_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('ballistix'), serie('tactical'), marca('crucial')]).
+periferico_ram(crucial_ballistix_elite_4gb_ddr3, [ram('ddr3'), capacidade('4gb'), modelo('ballistix'), serie('elite'), marca('crucial')]).
+periferico_ram(crucial_ballistix_elite_8gb_ddr3, [ram('ddr3'), capacidade('8gb'), modelo('ballistix'), serie('elite'), marca('crucial')]).
+periferico_ram(crucial_ballistix_sport_4gb_ddr4, [ram('ddr4'), capacidade('4gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
+periferico_ram(crucial_ballistix_sport_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('ballistix'), serie('sport'), marca('crucial')]).
+periferico_ram(crucial_ballistix_sport_lt_4gb_ddr4, [ram('ddr4'), capacidade('4gb'), modelo('ballistix'), serie('sport_lt'), marca('crucial')]).
+periferico_ram(crucial_ballistix_sport_lt_4gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('ballistix'), serie('sport_lt'), marca('crucial')]).
+periferico_ram(crucial_ballistix_tactical_4gb_ddr4, [ram('ddr4'), capacidade('4gb'), modelo('ballistix'), serie('tactical'), marca('crucial')]).
+periferico_ram(crucial_ballistix_tactical_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('ballistix'), serie('tactical'), marca('crucial')]).
+periferico_ram(crucial_ballistix_elite_4gb_ddr4, [ram('ddr4'), capacidade('4gb'), modelo('ballistix'), serie('elite'), marca('crucial')]).
+periferico_ram(crucial_ballistix_elite_8gb_ddr4, [ram('ddr4'), capacidade('8gb'), modelo('ballistix'), serie('elite'), marca('crucial')]).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1159,342 +1158,342 @@ processador(threadripper_1950X) :-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 periferico_ram(corsair_vengeance_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
 	capacidade('4gb'),
 	modelo('vengeance'),
     marca('corsair'),!.
 
 
 periferico_ram(corsair_vengeance_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
 	capacidade('8gb'),
 	modelo('vengeance'),
 	marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_lp_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('vengeance'),
     serie('low_profile'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_lp_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('vengeance'),
     serie('low_profile'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_pro_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('vengeance'),
     serie('pro'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_pro_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('vengeance'),
     serie('pro'),
     marca('corsair'),!.
 
 periferico_ram(corsair_dominator_platinum_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('dominator'),
     serie('platinum'),
     marca('corsair'),!.
 
 periferico_ram(corsair_dominator_platinum_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('dominator'),
     serie('platinum'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_lpx_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('4gb'),
     modelo('vengeance'),
     serie('lpx'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_lpx_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('vengeance'),
     serie('lpx'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_lpx_16gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('16gb'),
     modelo('vengeance'),
     serie('lpx'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_led_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('vengeance'),
     serie('led'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_led_16gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('16gb'),
     modelo('vengeance'),
     serie('led'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_rgb_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('vengeance'),
     serie('rgb'),
     marca('corsair'),!.
 
 periferico_ram(corsair_vengeance_rgb_16gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('16gb'),
     modelo('vengeance'),
     serie('rgb'),
     marca('corsair'),!.
 
 periferico_ram(corsair_dominator_platinum_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('dominator'),
     serie('platinum'),
     marca('corsair'),!.
 
 periferico_ram(corsair_dominator_platinum_16gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('16gb'),
     modelo('dominator'),
     serie('platinum'),
     marca('corsair'),!.
 
 periferico_ram(kingston_hyperx_fury_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('hyperx'),
     serie('fury'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_fury_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('hyperx'),
     serie('fury'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_savage_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('hyperx'),
     serie('savage'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_savage_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('hyperx'),
     serie('savage'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_predator_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('hyperx'),
     serie('predator'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_predator_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('hyperx'),
     serie('predator'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_fury_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('4gb'),
     modelo('hyperx'),
     serie('fury'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_fury_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('hyperx'),
     serie('fury'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_fury_16gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('16gb'),
     modelo('hyperx'),
     serie('fury'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_savage_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('4gb'),
     modelo('hyperx'),
     serie('savage'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_savage_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('hyperx'),
     serie('savage'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_savage_16gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('16gb'),
     modelo('hyperx'),
     serie('predator'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_predator_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('4gb'),
     modelo('hyperx'),
     serie('predator'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_predator_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('hyperx'),
     serie('predator'),
     marca('kingston'),!.
 
 periferico_ram(kingston_hyperx_predator_16gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('16gb'),
     modelo('hyperx'),
     serie('predator'),
     marca('kingston'),!.
 
 periferico_ram(crucial_ballistix_sport_2gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('2gb'),
     modelo('ballistix'),
     serie('sport'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_sport_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('ballistix'),
     serie('sport'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_sport_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('ballistix'),
     serie('sport'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_sport_xt_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('ballistix'),
     serie('sport_xt'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_sport_xt_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('ballistix'),
     serie('sport_xt'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_tactical_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('ballistix'),
     serie('tactical'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_tactical_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('ballistix'),
     serie('tactical'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_elite_4gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('4gb'),
     modelo('ballistix'),
     serie('elite'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_elite_8gb_ddr3) :-
-	slot('ddr3'),
+	ram('ddr3'),
     capacidade('8gb'),
     modelo('ballistix'),
     serie('elite'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_sport_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('4gb'),
     modelo('ballistix'),
     serie('sport'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_sport_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('ballistix'),
     serie('sport'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_sport_lt_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('4gb'),
     modelo('ballistix'),
     serie('sport_lt'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_sport_lt_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('ballistix'),
     serie('sport_lt'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_tactical_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('4gb'),
     modelo('ballistix'),
     serie('tactical'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_tactical_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('ballistix'),
     serie('tactical'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_elite_4gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('4gb'),
     modelo('ballistix'),
     serie('elite'),
     marca('crucial'),!.
 
 periferico_ram(crucial_ballistix_elite_8gb_ddr4) :-
-	slot('ddr4'),
+	ram('ddr4'),
     capacidade('8gb'),
     modelo('ballistix'),
     serie('elite'),
